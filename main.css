@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f0f0f0;  
+}  
+
+header {  
+    
+    background:linear-gradient(to bottom,   
+    rgba(37, 33, 94, 0.9) 55%,
+    rgba(239, 216, 152, 0.9) 45%);  
+    color: rgb(255, 255, 255);  
+    padding: 10px 0;  
+    text-align: center;  
+}  
+
+
+#logo{
+    display: flex;
+    z-index: 999;
+    margin-top: 13px;
+    width: 48px
+    
+
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border:0;
+}
+header {
+    display: flex;
+    padding-left: 15px;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    display: flex;
+    padding-left: 90px;
+    gap: 15px;
+}
+
+nav ul {  
+    list-style: none;  
+    padding: 0; 
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+main {  
+      
+    background-color: white; 
+}  
+#landing >img{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+#moto{
+    background-color: #0c85b7;
+    border-right: 40px solid #eeda9f;
+    border-radius: 8px;
+    padding: 15px 10px;
+    width: 55%;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    position:absolute;
+    top: 40%;
+    left: 25%;
+    display: block;
+   
+    
+}
+#moto >h2{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 30px;
+        font-family: serif;
+}
+#moto >h1{
+        font-size: 45px;
+        color: #eeda9f;
+        margin-top: 0px;
+        font-weight: 400;
+        font-family:serif;
+        margin-bottom: 10px;
+}
+#moto > hr{
+    margin-top: 0px;
+    width: 50%;
+    
+}
+
+#menu>#menu1{
+    padding: 25px 30px;
+    background-color: #0c85b7;
+    height: 205px;
+    border-radius: 8px 0 0 0;
+    color: #FFF;
+    margin-left: 2px;
+}
+#menu1>h4{
+    margin: 0 0 10px 15px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    font-weight: 500;
+}
+#menu1 h4>span{
+    color: #eaef62;;
+}
+#menu1-container{
+    display: flex;
+}
+#menu1-container .menu1-list ul>li,a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    margin-left: -10px;
+    line-height: 25px;
+}
+#menu1-list{
+    padding-top: 0px;
+}
+
+
+
+.titles {  
+    font-size: 30px;
+    
+}  
+
+#announcements{
+    background-color: #efd89861;
+    color: #323232;
+}
+#announcements > h2{
+    margin: 100px;
+}
+#container{
+    display:grid;
+    grid-template-columns: repeat(2,10fr);
+    row-gap: 0px;
+    margin-left: 100px;
+    padding-bottom: 50px;
+}
+.anounc-article{
+    width: 80%;
+}
+.anounc-article > h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.week{
+    color:#0000008a;
+    font-size: 12px;
+}
+.readmore a{
+    color:#0e88c3;
+    text-decoration: none;
+    font-size: 14px;
+}
+#events{
+    background-color: #0e88c3;
+    padding-top:2px;
+}
+#events >h2{
+    color: #ffffff;
+    padding-left:7%;
+    padding-top:3%;
+}
+#eventContainer section img{
+    width: 100%;
+    border-bottom: 5px solid #efd898;
+
+}
+
+#eventContainer>section{
+    width: 90%;
+    color: #5A5A5A;
+    padding: 15px 0;
+    margin-bottom: 25%;
+    min-height: 160px;
+    text-align: center;
+}
+#eventContainer section>.event-home-case{
+    background-color: #fff;
+    padding:5px 0px;
+}
+#eventContainer section h4>strong{
+    color:#0c85b7;
+}
+#eventContainer section h4> .event-date{
+    font-size: 13px;
+}
+#eventContainer section>h5{
+    font-size: 14px;
+    font-weight: 500;
+}
+#eventContainer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 0px;
+    margin-left: 100px;
+
+    
+}
+ 
+#social-media>.titles{
+    color: #666;
+    font-weight: 500;
+}
+
+footer {  
+     
+    padding: 100px;  
+    background-color: #32455a; 
+    color:#E5E5E5;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+    position: relative;
+
+}  
+
+footer div ul li{
+    list-style: none;
+    
+}
+footer div ul li a{
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+footer div a :hover {
+    color: #E5E5E5;
+    text-decoration:underline;
+}
+#footer{
+    display:grid;
+    grid-template-columns: repeat(5,10fr);
+}
+
+.copy{
+    display:block;
+    color:#67798c;
+    
+}
