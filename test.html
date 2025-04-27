@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #25215e;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn,
+        .dropbtn:focus {
+            background-color: #efd898;
+        }
+
+        .dropdown-content {
+            list-style: none;
+            display: none;
+            position: absolute;
+            background-color: #1b5f9a;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 0;
+            text-align: left;
+            font-size: 14px;
+            margin: 2px 0 0;
+            margin-top: 0;
+            border-radius: 0 0 6px 6px !important;
+        }
+
+        .dropdown-content li {
+            padding: 0;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #fff;
+            padding: 3px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body style="background-color:white;">
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction('about')">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-content" id="about">
+                <li><a href="/about/mubas">MUBAS at a Glance</a></li>
+                <li><a href="/about/directions">Map &amp; Direction</a></li>
+                <li><a href="/about/location">Blantyre City</a></li>
+                <li><a href="/about/faq">FAQ</a></li>
+            </ul>
+            <!--<div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>-->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction('admin')">Admin
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-content" id="admin">
+                <li><a href="/office/vice-chancellor">Vice Chancellor</a></li>
+                <li><a href="/office/deputy-vice-chancellor">Deputy Vice Chancellor</a></li>
+                <li><a href="/office/university-registrar">University Registrar</a></li>
+                <li><a href="/office/dean/all">Executive Deans</a></li>
+                <li><a href="/office/director-of-student-affairs">Students Affairs</a></li>
+                <li><a href="/office/university-librarian">University Librarian</a></li>
+                <li class="dropdown-header">OTHER OFFICES</li>
+                <li><a href="/office/director-of-finance-and-investment">Finance &amp; Investment</a></li>
+                <li><a href="/office/procurement">Procurement</a></li>
+                <li><a href="/office/quality-assurance">Quality Assurance</a></li>
+                <li><a href="/office/chaplain">Chaplain</a></li>
+                <li class="dropdown-header">DOCUMENTS</li>
+                <li><a href="/page/policies"></a></li>
+                <li><a href="/page/policies">Policies</a></li>
+            </ul>
+            <!--<div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>-->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction('updates')">Updates
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-content" id="updates">
+                <li><a href="/news">News</a></li>
+                <li><a href="/news/announcements">Announcements</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/news/tag/partnership">Partnerships</a></li>
+                <li><a href="/news/tag/health">Health Activities</a></li>
+                <li><a href="/news/tag/outreach">Community Outreach</a></li>
+                <li><a href="/news/tag/recreational">Sports &amp; Recreation</a></li>
+            </ul>
+            <!--<div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>-->
+        </div>
+        <a href="#news">Students</a>
+        <a href="#news">Staff</a>
+        <a href="#news">Library</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction('academic')">Academic Sections
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-content" id="academic">
+                <li><a href="/department">Departments</a></li>
+                <li><a href="/centre">Centres</a></li>
+                <li><a href="/post-graduate-studies">Post-graduate Studies</a></li>
+                <li><a href="/e-learning">E-Learning</a></li>
+                <li class="dropdown-header">SCHOOLS</li>
+                <li><a href="/school/school-of-science-and-technology">School of Science and Technology</a></li>
+                <li><a href="/school/school-of-built-environment">School of Built Environment</a></li>
+                <li><a href="/school/school-of-business-and-economic-sciences">School of Business and Economic
+                        Sciences</a></li>
+                <li><a href="/school/school-of-education-communication-and-media-studies">School of Education,
+                        Communication and Media Studies</a></li>
+                <li><a href="/school/school-of-engineering">School of Engineering</a></li>
+            </ul>
+            <!--<div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>-->
+        </div>
+        <a href="#news">Programmes</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction('facilities')">Facilities
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-content" id="facilities">
+                <li><a href="/organization">Unions</a></li>
+                <li><a href="/page/sscr">Senior Staff Common Room</a></li>
+                <li><a href="/page/jscr">Junior Staff Common Room</a></li>
+                <li><a href="/page/sports">Sporting Facilities</a></li>
+                <li><a href="/page/mental-health-services">Mental Health Services</a></li>
+                <li>
+                </li>
+                <li><a href="/clinic">College Clinic</a></li>
+            </ul>
+            <!--<div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>-->
+        </div>
+        <a href="#news">Publications</a>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+
+        function myFunction(item) {
+            document.getElementById(item).classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("facilities");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                    myDropdown.style.backgroundColor = "#1b5f9a"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
